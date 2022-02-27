@@ -12,3 +12,8 @@ rows = soup.find_all("div", class_="revue-p")
 
 for row in rows:
     print(row.text)
+
+    if (len(row("a")) > 0):
+        print(row("a")[0].get("href"))
+    
+    print("------------------------")
